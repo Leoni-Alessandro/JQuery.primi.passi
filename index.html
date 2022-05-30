@@ -11,8 +11,9 @@
         //inizializzo jquery
         $(document).ready(function(){
 
-            //sposto il testo al click
+            //sposto il testo al click e rendo visibile
             $("#button").click(function(){
+                $("h3").show(1000);
                 $("h3").css("text-align","center");
             });
 
@@ -26,7 +27,7 @@
 <body>
     
     <!--scrivo html di riferimento-->
-    <h3>HELLO WORLD!!</h3>
+    <h3 hidden>HELLO WORLD!!</h3>
     <button id="button">Cliccami!</button>
 
 </body>
